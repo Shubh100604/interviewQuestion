@@ -27,6 +27,11 @@ public class pageobj extends base {
 		email.sendKeys(emailId);
 		result.sendKeys(num3);
 	}
+	public void fillResult(int num3){
+		result.sendKeys();
+		
+	}
+	
 	public void clickOnsubmitB() {
 		submitB.click();
 	}
@@ -34,8 +39,14 @@ public class pageobj extends base {
 	String  num3;
 	public void getText() {
 		String Num1=num1.getText();
+		System.out.println(Num1);
+		
 		String Num2=num2.getText();
+		System.out.println(Num2);
 		 num3=Num1+Num2;
+		 int num3=Integer.parseInt(Num1)+Integer.parseInt(Num2);
+		 
+		 System.out.println(num3);
 	}
 	
 	
